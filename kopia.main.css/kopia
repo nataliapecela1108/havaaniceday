@@ -1,0 +1,129 @@
+$nazwa-zmiennej:blueviolet;
+$secondary-color:gold;
+
+$size-sm:20px;
+
+* {
+    box-sizing: border-box;
+}
+
+.product {
+    background-color: gold;
+    padding: 40px;
+    color: gray;
+    font-size: 23px;
+    border-radius: 90px;
+
+    @media (max-width: 768px) {
+        background-color: $secondary-color;
+        
+    &__title {
+        color: blueviolet;
+
+        
+    }
+
+    &__desc {
+        color: pink;
+        @media (max-width:768px) {
+            color: red;
+        }
+    }
+
+    &__button {
+        border: 3px solid red;
+        border-radius: 40px;
+
+        &--buy {
+            background-color: green;
+        }
+
+        &--cancel {
+            background-color: yellow;
+        }
+    }
+}
+
+//DZIEDZICZENIE / EXTENDES
+
+
+}
+
+
+
+
+
+%square {
+
+    width: 130px;
+    height: 130px;
+    border:3px solid black;
+}
+
+.box-primary {
+    @extend %square;
+    background-color: green;
+    border-radius: 70px;
+
+
+}
+
+.box-secondary {
+    @extend %square;
+    background-color: violet;
+    border-radius: 80px;
+}
+
+%text {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(65, 53, 53);
+    letter-spacing: 1px;
+}
+
+.text-first {
+    @extend %text;
+}
+
+.text-second {
+    @extend %text;
+}
+
+
+//MIXIN
+
+
+
+@mixin text ($a, $b, $c, $d:0) {
+    font-size: $a;
+    font-weight: $b;
+    color: $c;
+    letter-spacing: $d;
+}
+
+.text-first {
+    @include text (24px, 700, rgb(56, 184, 156));
+    }
+
+.text-second {
+    @include text (38px, 400, rgb(158, 122, 54));
+    }
+
+@mixin flex ($justify, $algin, $gap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $algin;
+    gap: $gap;
+}
+
+.wrapper {
+    background-color: rgba(132, 56, 161, 0.733);
+    padding: 20px;
+    @include flex (center,center,10px)
+}
+
+.box {
+    @extend %square;
+    background-color: green;
+
+}

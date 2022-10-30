@@ -1,0 +1,82 @@
+.pricing {
+    padding:5px 45px;
+    margin: 70px;
+    display: flex;
+    width: 100;
+    transition: 0.5s;
+    @extend %glass;
+    text-align: center;
+    flex: 1;
+    color: $color-white;
+    border-radius: 10px;
+    font-size: 15px;
+    color: $color-white;
+    transition: 0.5s;
+
+    .text {
+        text-align: left;
+        font-weight: 500;
+        @extend %glass;
+        flex: 1;
+        color: $color-white;
+        border-radius: 30px;
+        margin: 20px;
+        font-size: 10px;       
+        color: $color-white;
+        padding: 10px;
+        transition: 0.4s;
+        line-height: 2;
+        
+        .price-month {
+           font-size: 16px; 
+          
+        }
+
+        .price-month-text {
+            font-size: 10px;
+        }
+
+        .price-month-month {
+            font-size: 10px;
+        
+        }
+
+        &:hover {
+            background-color: #889990;
+            color: white;
+            transform: translateY(-20px);
+           
+            }
+   
+    }
+
+        .price {
+            text-align: center;
+            font-weight: 500;
+            margin:50px 0;
+            padding: 70px;
+        }
+
+        .info {
+            text-align: left;
+            font-size: 12px;
+            margin-top: 10px;
+            
+        }
+    
+    }
+
+.button-pin {
+    text-align: center;
+    color: $color-white;
+    background-color: #0e8644;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px 0 ;
+    border: 0;
+    
+}
+
+
+    

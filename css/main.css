@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Roboto:wght@100;300;400;700&display=swap");
+.pricing .text, .pricing, .best .best-card, .banner .banner-btn, .nav {
+  backdrop-filter: blur(0px) saturate(126%);
+  -webkit-backdrop-filter: blur(0px) saturate(126%);
+  background-color: rgba(61, 0, 51, 0.49);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #111927;
+  background-image: radial-gradient(at 47% 33%, hsl(162deg, 77%, 40%) 0, transparent 59%), radial-gradient(at 82% 65%, hsl(218deg, 39%, 11%) 0, transparent 55%);
+}
+
+ul {
+  list-style: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  padding: 8px 45px;
+  color: white;
+}
+.nav > i {
+  font-size: 40px;
+}
+.nav .nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+.nav button {
+  padding: 12px 16px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: #0e8644;
+}
+
+.banner {
+  padding: 8px 45px;
+  color: white;
+}
+.banner .banner-title {
+  font-size: 46px;
+}
+.banner .banner-subtitle {
+  font-size: 28px;
+  font-weight: 300;
+}
+.banner .banner-btn {
+  width: 160px;
+  padding: 8px 0;
+  margin-top: 30px;
+  border-radius: 40px;
+  border: none;
+  background-color: #0e8644;
+  color: white;
+  transition: 0, 5s;
+  cursor: pointer;
+}
+.banner .banner-btn:hover {
+  background-color: white;
+  color: rgb(13, 104, 73);
+}
+
+.best {
+  margin: 50px;
+  padding: 14px 45px;
+}
+.best .best-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.best .best-title {
+  text-align: center;
+  font-weight: 500;
+  margin: 13px 0;
+}
+.best .best-card {
+  text-align: center;
+  flex: 1;
+  padding: 25px;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 15px;
+  color: white;
+  transition: 0.5s;
+}
+.best .best-card:hover {
+  background-color: #95c9ac;
+  color: #cce2d6;
+  transform: translateY(-20px);
+}
+.best .best-card:hover > img {
+  background-color: #0ead86;
+}
+.best .best-card > img {
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #0e8644;
+  padding: 25px;
+}
+.best .best-card .card-desc {
+  margin: 0 auto;
+  font-weight: 300;
+  opacity: 0, 6;
+}
+.best .best-card .card-btn {
+  padding: 6px 10px;
+  margin: 3px 0;
+  color: white;
+  background-color: #0e8644;
+  border: none;
+  border-radius: 10px;
+}
+
+.pricing {
+  padding: 5px 45px;
+  margin: 70px;
+  display: flex;
+  width: 100;
+  transition: 0.5s;
+  text-align: center;
+  flex: 1;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  transition: 0.5s;
+}
+.pricing .text {
+  text-align: left;
+  font-weight: 500;
+  flex: 1;
+  color: white;
+  border-radius: 30px;
+  margin: 20px;
+  font-size: 10px;
+  color: white;
+  padding: 10px;
+  transition: 0.4s;
+  line-height: 2;
+}
+.pricing .text .price-month {
+  font-size: 16px;
+}
+.pricing .text .price-month-text {
+  font-size: 10px;
+}
+.pricing .text .price-month-month {
+  font-size: 10px;
+}
+.pricing .text:hover {
+  background-color: #889990;
+  color: white;
+  transform: translateY(-20px);
+}
+.pricing .price {
+  text-align: center;
+  font-weight: 500;
+  margin: 50px 0;
+  padding: 70px;
+}
+.pricing .info {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.button-pin {
+  text-align: center;
+  color: white;
+  background-color: #0e8644;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 0;
+  border: 0;
+}/*# sourceMappingURL=main.css.map */

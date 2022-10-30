@@ -1,0 +1,72 @@
+.best {
+    margin: 50px;
+    padding: 14px 45px;
+
+    .best-wrapper {
+        @include flex (center,center,20px)
+    }
+
+    .best-title {
+        text-align: center;
+        font-weight: 500;
+        
+        
+        margin:13px 0;
+        }
+
+
+    .best-card {
+        @extend %glass;
+        text-align: center;
+        flex: 1;
+        padding: 25px;
+        color: $color-white;
+        border-radius: 10px;
+        margin: 10px;
+        font-size: 15px;
+        color: $color-white;
+        transition: 0.5s;
+        
+
+        &:hover {
+            background-color: #95c9ac;
+            color: #cce2d6;
+            transform: translateY(-20px);
+        }
+
+        &:hover > img {
+            background-color: #0ead86;
+
+
+        }
+
+        & > img {
+            width: 100%;
+            border-radius: 50%;
+            border:2px solid #0e8644;
+            padding: 25px;
+
+        }
+
+        .card-desc {
+            margin: 0 auto;
+            font-weight: 300;
+            opacity: 0,6;
+        }
+
+        .card-btn {
+            padding: 6px 10px;
+            margin: 3px 0;
+            color: $color-white;
+            background-color: $primary-color;
+            border: none;
+            border-radius: 10px;
+        }
+
+    }
+
+
+
+
+
+}
