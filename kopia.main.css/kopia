@@ -1,4 +1,4 @@
-$nazwa-zmiennej:blueviolet;
+/* $nazwa-zmiennej:blueviolet;
 $secondary-color:gold;
 
 $size-sm:20px;
@@ -126,4 +126,4 @@ $size-sm:20px;
     @extend %square;
     background-color: green;
 
-}
+} */

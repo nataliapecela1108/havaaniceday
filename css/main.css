@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Roboto:wght@100;300;400;700&display=swap");
 .pricing .text, .pricing, .best .best-card, .banner .banner-btn, .nav {
-  backdrop-filter: blur(0px) saturate(126%);
-  -webkit-backdrop-filter: blur(0px) saturate(126%);
   background-color: rgba(61, 0, 51, 0.49);
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
@@ -39,16 +37,55 @@ ul {
   align-items: center;
   gap: 15px;
 }
+@media (max-width: 1024px) {
+  .nav .nav-list {
+    flex-direction: column;
+  }
+}
 .nav a {
   text-decoration: none;
   color: white;
 }
-.nav button {
+.nav .list-btn {
   padding: 12px 16px;
   border-radius: 20px;
   border: none;
   color: white;
   background-color: #0e8644;
+}
+.nav .menu-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.nav .menu-btn > i {
+  font-size: 34px;
+  color: white;
+}
+@media (max-width: 1024px) {
+  .nav .menu-btn {
+    display: block;
+  }
+}
+@media (max-width: 1024px) {
+  .nav .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(14, 8, 8, 0.733);
+    min-height: 100vh;
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: 0.6s;
+  }
+}
+
+.showMenu {
+  transform: translateX(0) !important;
 }
 
 .banner {
@@ -88,15 +125,22 @@ ul {
   align-items: center;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .best .best-wrapper {
+    flex-direction: column;
+  }
+}
 .best .best-title {
   text-align: center;
-  font-weight: 500;
+  font-weight: 600;
+  color: green;
+  font-size: 46px;
   margin: 13px 0;
 }
 .best .best-card {
   text-align: center;
   flex: 1;
-  padding: 25px;
+  padding: 8px;
   color: white;
   border-radius: 10px;
   margin: 10px;
@@ -127,14 +171,14 @@ ul {
   padding: 6px 10px;
   margin: 3px 0;
   color: white;
-  background-color: #0e8644;
+  background-color: #19b35e;
   border: none;
   border-radius: 10px;
 }
 
 .pricing {
-  padding: 5px 45px;
-  margin: 70px;
+  padding: 5px;
+  margin: 40px 100px;
   display: flex;
   width: 100;
   transition: 0.5s;
@@ -146,18 +190,23 @@ ul {
   color: white;
   transition: 0.5s;
 }
+@media (max-width: 1024px) {
+  .pricing {
+    flex-direction: column;
+  }
+}
 .pricing .text {
-  text-align: left;
+  text-align: center;
   font-weight: 500;
   flex: 1;
   color: white;
   border-radius: 30px;
   margin: 20px;
-  font-size: 10px;
+  font-size: 15px;
   color: white;
   padding: 10px;
   transition: 0.4s;
-  line-height: 2;
+  line-height: 1.5;
 }
 .pricing .text .price-month {
   font-size: 16px;
@@ -188,7 +237,7 @@ ul {
 .button-pin {
   text-align: center;
   color: white;
-  background-color: #0e8644;
+  background-color: #19b35e;
   border-radius: 20px;
   width: 100%;
   margin-top: 15px;

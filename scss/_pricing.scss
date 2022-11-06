@@ -1,6 +1,7 @@
 .pricing {
-    padding:5px 45px;
-    margin: 70px;
+    padding:5px;
+    // padding:5px 45px;
+    margin: 40px 100px;
     display: flex;
     width: 100;
     transition: 0.5s;
@@ -12,24 +13,26 @@
     font-size: 15px;
     color: $color-white;
     transition: 0.5s;
+    @media(max-width:1024px) {
+        flex-direction: column;
+    }
 
     .text {
-        text-align: left;
+        text-align: center;
         font-weight: 500;
         @extend %glass;
         flex: 1;
         color: $color-white;
         border-radius: 30px;
         margin: 20px;
-        font-size: 10px;       
+        font-size: 15px;       
         color: $color-white;
         padding: 10px;
         transition: 0.4s;
-        line-height: 2;
+        line-height: 1.5;
         
         .price-month {
            font-size: 16px; 
-          
         }
 
         .price-month-text {
@@ -38,18 +41,15 @@
 
         .price-month-month {
             font-size: 10px;
-        
         }
 
         &:hover {
             background-color: #889990;
             color: white;
             transform: translateY(-20px);
-           
             }
    
     }
-
         .price {
             text-align: center;
             font-weight: 500;
@@ -61,21 +61,19 @@
             text-align: left;
             font-size: 12px;
             margin-top: 10px;
-            
         }
-    
     }
 
 .button-pin {
     text-align: center;
-    color: $color-white;
-    background-color: #0e8644;
+    color: white;
+    background-color: #19b35e;
     border-radius: 20px;
     width: 100%;
     margin-top: 15px;
     padding: 10px 0 ;
     border: 0;
-    
+
 }
 
 

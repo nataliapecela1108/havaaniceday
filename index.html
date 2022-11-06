@@ -10,9 +10,13 @@
 </head>
 <body>
 
+    <div class="wrapper" id="Cards">
+
+    </div>
+    
    <header class="nav">
         <i class="bi bi-bank"></i>
-         <nav class="nav-menu">
+         <nav class="nav-menu" id="Menu">
              <ul class="nav-list">
                  <li>
                        <a href="">Homepage</a>
@@ -24,87 +28,34 @@
                         <a href="">Contact</a>
                 </li>
                 <li>
-                        <button>Sign In</button>
+                        <button class="list-btn">Sign In</button>
                 </li>
             </ul>
         </nav>
+
+    <button class="menu-btn" id="HamburgerBtn">
+        <i class="bi bi-list"></i>
+    </button>
+
    </header>
-    
 
    <main class="banner">
-        <h1 class="banner-title">Good Morning</h1>
-        <h3 class="banner-subtitle">Hello John</h3>
-        <button class="banner-btn">JOIN NOW</button>
+        <h1 class="banner-title" id="Greeting"></h1>
+        <h3 class="banner-subtitle"id="Create">Create account or sign in</h3>
+        <button class="banner-btn"id="btnJoin">JOIN NOW</button>
    </main>
 
    <div class="best">
-        <div class="best-wrapper">
+        <div class="best-wrapper" id="Workers">
 
-            <article class="best-card">
-                <img src="https://i.pravatar.cc/150?img=12" alt="">
-                <h3 class="card-name">John Smith</h3>
-                <button class="card-btn">
-                    <i class="bi bi-person-plus-fill"></i>
-                    Follow 
-                </button>
-                <p class="card-desk">Some quick example
-                     text to build on the card title
-                     and make up the bulk of the.
-                 </p>
-
-
-            </article>
-
-            <article class="best-card">
-                <img src="https://i.pravatar.cc/150?img=68" alt="">
-                <h3 class="card-name">Karl Wolf</h3>
-                <button class="card-btn">
-                    <i class="bi bi-person-plus-fill"></i>
-                    Follow 
-                </button>
-                <p class="card-desk">Some quick example
-                     text to build on the card title
-                     and make up the bulk of the.
-                 </p>
-
-
-            </article>
-
-            <article class="best-card">
-                <img src="https://i.pravatar.cc/150?img=49" alt="">
-                <h3 class="card-name">Rita Martin</h3>
-                <button class="card-btn">
-                    <i class="bi bi-person-plus-fill"></i>
-                    Follow 
-                </button>
-                <p class="card-desk">Some quick example
-                     text to build on the card title
-                     and make up the bulk of the.
-                 </p>
-
-            </article>
-
-            <article class="best-card">
-                <img src="https://i.pravatar.cc/150?img=55" alt="">
-                <h3 class="card-name">Zac Marlo</h3>
-                <button class="card-btn">
-                    <i class="bi bi-person-plus-fill"></i>
-                    Follow 
-                </button>
-                <p class="card-desk">Some quick example
-                     text to build on the card title
-                     and make up the bulk of the.
-                 </p>
-
-            </article>
         </div>
 
           <h2 class="best-title">Our the best workers</h2>
    </div>
 
-   <div class="pricing">
+   <div class="pricing" id="pricing">
        
-    <div class="text">
+    <!-- <div class="text">
         <div class="price-month">
             <span class="price-month-text">$</span>
             50
@@ -174,10 +125,9 @@
             <p>Storage 50 GB</p>
             <p>Monthly Visitors 400k</p>
             <button class="button-pin">Buy now</button>
-            </div>
+            </div> -->
 
         </div>
-        
 
     </div>    
 
